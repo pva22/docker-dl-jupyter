@@ -25,6 +25,7 @@ RUN apt-get -y install wget
 RUN apt-get -y install zip
 RUN apt-get -y install unzip
 RUN apt-get -y install htop
+RUN apt-get install ffmpeg libsm6 libxext6  -y
 
 RUN jupyter notebook --generate-config --allow-root
 RUN echo "c.NotebookApp.ip = '*'" >> /root/.jupyter/jupyter_notebook_config.py
