@@ -13,4 +13,3 @@ sciPy
 pillow
 matplotlib
 kaggle
-pycocotools
