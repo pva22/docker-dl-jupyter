@@ -25,7 +25,7 @@ RUN apt-get install wget
 RUN apt-get install zip
 RUN apt-get install unzip
 RUN apt-get install htop
- 
+
 RUN jupyter notebook --generate-config --allow-root
 RUN echo "c.NotebookApp.ip = '*'" >> /root/.jupyter/jupyter_notebook_config.py
 RUN echo "c.NotebookApp.open_browser = False" >> /root/.jupyter/jupyter_notebook_config.py
