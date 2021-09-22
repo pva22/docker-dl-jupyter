@@ -54,7 +54,7 @@ sudo docker run --rm --gpus all nvidia/cuda:<CUDA текущая версия>-b
 ```docker build -t datascience . ```
 
 6. Контейнер из образа с параметрами<br>
-```docker container run -it --shm-size=2gb --gpus all -d --expose 8888 -p 8888:8888 --name vlad-sber-dl datascience``` <br>
+```docker container run -it --shm-size=2gb --gpus all -d -p 8888:8888 -p 6006:6006 -p 6007:6007 --name vlad-sber-dl datascience``` <br>
 ИЛИ <br>
 TODO: в docker-compose.yml не удалось задать параметры для запуска совместно с GPU<br>
 ```docker-compose up если есть валидный docker-compose.yml``` 
