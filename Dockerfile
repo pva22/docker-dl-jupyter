@@ -21,6 +21,7 @@ RUN pip3 install -r requirements.txt
 
 RUN apt-get install nano
 RUN apt-get -y install git
+RUN apt-get install wget
  
 RUN jupyter notebook --generate-config --allow-root
 RUN echo "c.NotebookApp.ip = '*'" >> /root/.jupyter/jupyter_notebook_config.py
