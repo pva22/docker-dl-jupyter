@@ -7,9 +7,10 @@ opencv-python
 scikit-image
 pandas 
 numpy 
-tensorboard
+tensorboard==2.6
 mahotas
 sciPy
 pillow
 matplotlib
 kaggle
+pycocotools
