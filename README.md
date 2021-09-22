@@ -61,3 +61,8 @@ TODO: в docker-compose.yml не удалось задать параметры 
 
 ```docker cp <container-name>:/root/dockerLogs/install-logs.log .```<br>
 ```docker exec -it <container name> /bin/bash```
+
+7. Запуск tensorboard из контейнера
+```
+tensorboard --logdir runs --host 0.0.0.0
+```
