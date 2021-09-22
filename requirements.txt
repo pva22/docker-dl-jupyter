@@ -1,0 +1,16 @@
+tensorflow==1.14.0 
+jupyter==1.0.0
+torch==1.9.1+cu102
+torchvision==0.10.1+cu102 
+torchaudio===0.9.1
+opencv-python
+scikit-image
+pandas 
+numpy 
+tensorboard
+mahotas
+simplelTK
+sciPy
+pillow
+matplotlib
+kaggle
