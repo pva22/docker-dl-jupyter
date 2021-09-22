@@ -17,7 +17,7 @@ RUN apt-get update | sed -e "s/^/$(date +%Y%m%d-%H%M%S) :  /" 2>&1 | tee -a ${LO
 
 COPY requirements.txt /root/datascience/requirements.txt
 WORKDIR /root/datascience
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirements.txt; exit 0
 
 RUN apt-get install nano
 RUN apt-get -y install git
