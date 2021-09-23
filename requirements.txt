@@ -13,3 +13,4 @@ sciPy
 pillow
 matplotlib
 kaggle
+numba
